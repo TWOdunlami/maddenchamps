@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300&display=swap');
+body {
+  font-family: 'Newsreader', serif;
+  background-image: url("playstation-7025275_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 550px;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.welcome {
+    text-align: center;
+    color: white;
+    font-family: "Garamond", serif;
+    font-weight: 300;
+    font-size: 32px;
+}
+h4 {
+  text-align: center;
+  color: white;
+  font-family: "Garamond", serif;
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 4em;
+}
+.rsvpForm {
+    text-align: center;
+    margin: auto;
+    color: navy;
+    font-family: "Garamond", serif;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: linen;
+    max-width: 20%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+footer,
+.mylink {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: red;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+:visited {
+  color: red;
+}
+@media only screen and (min-width: 800px) {
+    .rsvpForm {
+      text-align: center;
+      margin: auto;
+      color: Blue;
+      font-family: "Garamond", serif;
+      font-weight: 400;
+      text-decoration: none;
+      background-color: red;
+      max-width: 18%;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  }  
