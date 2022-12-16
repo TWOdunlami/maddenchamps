@@ -30,14 +30,14 @@ h4 {
   font-size: 22px;
   margin-bottom: 4em;
 }
-.rsvpForm {
+.rsvpForm, a {
     text-align: center;
     margin: auto;
-    color: navy;
+    color: white;
     font-family: "Garamond", serif;
     font-weight: 400;
     text-decoration: none;
-    background-color: linen;
+    background-color: red;
     max-width: 20%;
     cursor: pointer;
     border-radius: 20px;
