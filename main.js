@@ -1,5 +1,5 @@
 // Adjuster Trainee start date
-var countDownDate = new Date("January 27, 2023 08:30:00").getTime();
+var countDownDate = new Date("February 27, 2023 08:30:00").getTime();
 
 var ramos = setInterval(function() {
     var now = new Date().getTime();
