@@ -9,12 +9,12 @@ var ramos = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 *60)) / 1000);
 
-    document.getElementById("tania").innerHTML = days + "d " + hours + "h " 
+    document.getElementById("dami").innerHTML = days + "d " + hours + "h " 
     + minutes + "m " + seconds + "s ";
 
     if (distance < 0) {
         clearInterval(ramos);
-        document.getElementById("tania").innerHTML = "Today is my first day working for Progressive Insurance, as a Claims Adjuster Trainee! Thank you for the 💌 kind & motivational messages.";
+        document.getElementById("dami").innerHTML = "Let the Games Begin!";
     }
 
 },
