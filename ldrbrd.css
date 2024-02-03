@@ -31,18 +31,6 @@ h4 {
   font-size: 22px;
   margin-bottom: 4em;
 }
-.rsvpForm, .mylink2, a {
-    text-align: center;
-    margin: auto;
-    color: linen;
-    font-family: "Garamond", serif;
-    font-weight: 400;
-    text-decoration: underline solid grey 1.3px;
-    background-color: black;
-    max-width: 20%;
-    cursor: pointer;
-    border-radius: 20px;
-}
 footer,
 .mylink {
   position: fixed;
@@ -50,13 +38,13 @@ footer,
   bottom: 0;
   width: 100%;
   background-color: black;
-  color: red;
+  color: linen;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
 }
 :visited {
-  color: red;
+  color: linen;
 }
 @media only screen and (min-width: 800px) {
     .rsvpForm {
@@ -66,7 +54,7 @@ footer,
       font-family: "Garamond", serif;
       font-weight: 400;
       text-decoration: none;
-      background-color: red;
+      background-color: linen;
       max-width: 18%;
       cursor: pointer;
       border-radius: 20px;
