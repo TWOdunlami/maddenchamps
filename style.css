@@ -38,7 +38,7 @@ h4 {
     font-family: "Garamond", serif;
     font-weight: 400;
     text-decoration: underline solid linen 1.3px;
-    background-color: black;
+    background-color: #000000; 
     max-width: 20%;
     cursor: pointer;
     border-radius: 20px;
@@ -66,7 +66,7 @@ footer,
       font-family: "Garamond", serif;
       font-weight: 400;
       text-decoration: none;
-      background-color: red;
+      background-color: #000000;
       max-width: 18%;
       cursor: pointer;
       border-radius: 20px;
