@@ -1,62 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300&display=swap');
 body {
-  font-family: 'Newsreader', serif;
-  background-image: url("https://images.unsplash.com/flagged/photo-1578928534298-9747fc52ec97?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 550px;
-  padding: 0;
-  margin: 0;
-  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(to bottom, #ffffff, #eaece8);
+  background-size: 150%;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
-p {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  text-decoration: underline solid linen 1.5px;
+body:after, body:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5000%;
+  height: 5000%;
+  background: url("https://puu.sh/rdnqM/f13b5baa14.svg");
+  background-size: 300px;
+  z-index: -1;
+  animation: noodling 700s infinite;
 }
-.welcome {
-    text-align: center;
-    color: white;
-    font-family: "Garamond", serif;
-    font-weight: 300;
-    font-size: 32px;
+@keyframes noodling {
+  0% {
+    left: -100%;
+    top: 0;
+  }
+  50% {
+    left: 0%;
+    top: -100%;
+  }
+  100% {
+    left: -100%;
+    top: 0;
+  }
 }
-h4 {
-  text-align: center;
-  color: white;
-  font-family: "Garamond", serif;
-  font-weight: 300;
-  font-size: 22px;
-  margin-bottom: 4em;
+body:before {
+  background: url("https://puu.sh/rdnPc/a060bd976b.svg");
+  background-size: 200px;
+  transform: scaleY(-1) rotate(0deg);
+  animation-duration: 500s;
+  background-position: right top;
 }
-footer,
-.mylink {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+body .leaderboard {
   width: 100%;
-  background-color: black;
-  color: linen;
+  max-width: 500px;
+  min-height: 500px;
+  position: relative;
+}
+body .leaderboard:before {
+  content: "Standings";
+  position: absolute;
+  left: calc(50% - 10px);
+  transform: translateX(-50%);
+  top: -0.9em;
+  z-index: 9;
+  font-size: 60px;
   text-align: center;
-  text-decoration: none;
-  cursor: pointer;
+  z-index: -1;
+  color: #0000fe;
+  font-weight: 900;
+  width: 100%;
 }
-:visited {
+body .leaderboard:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 30px);
+  right: -10px;
+  top: 25px;
+  background: red;
+  z-index: -1;
+  background: linear-gradient(to bottom, #ffffff, linen);
+}
+body .leaderboard .leader {
+  clear: both;
+  background: #d2d6fd;
+  width: 115%;
+  margin-left: -10%;
+  min-height: 150px;
+  background-size: 150%;
+  background: -webkit-linear-gradient(to bottom, #d2d6fd, #eaece8);
+  background: linear-gradient(to bottom, #d2d6fd, #eaece8);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+}
+body .leaderboard .leader h1 {
+  color: #0000fe;
+  font-size: 2.25em;
+  margin-left: 0.5em;
+  font-weight: 900;
+  margin-top: 0.4em;
+  position: relative;
+}
+body .leaderboard .leader h1 span {
+  font-size: 0.3em;
+  display: block;
+}
+body .leaderboard .leader h1:after {
+  content: "";
+  width: 150%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #ffffff;
+}
+body .leaderboard .leader:before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 50px 0;
+  border-color: transparent #0000fe transparent transparent;
+}
+body .leaderboard .leader div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: url("https://cdn-icons-png.flaticon.com/128/2331/2331846.png");
+  background-size: cover;
+  float: left;
+  border-radius: 100%;
+  margin-left: 2em;
+  border: 2px solid #0000fe;
+  box-shadow: inset 0px 0px 10px 3px #eaece8;
+}
+body .leaderboard .leader div:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0px;
+  height: 100%;
+  width: 150px;
+  border: 0px solid;
+  box-shadow: none;
+  background: -webkit-linear-gradient(to bottom, #ffffa2, linen);
+  background: linear-gradient(to bottom, #ffffa2, linen);
+}
+body .leaderboard .leader div:nth-of-type(2) h2 {
+  color: #0000fe;
+  text-align: center;
+  font-size: 0.7em;
+  line-height: 1;
+  margin-top: 0px;
+}
+body .leaderboard .leader div:nth-of-type(2) h2 span {
+  display: block;
+  font-size: 3.6em;
+  color: #0000fe;
+}
+body .leaderboard .leader div img {
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  opacity: 0.7;
+}
+body ul {
+  background: -webkit-linear-gradient(totop, #0000fe, #ffffff);
+  background: linear-gradient(to top, #0000fe, #ffffff);
+  background-size: 175%;
+  background-position: bottom;
+  list-style-type: none;
+  width: 100%;
+  display: block;
+  padding: 0px;
+  margin-top: 0px;
+}
+body ul li {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  clear: both;
+  position: relative;
+  width: 100%;
+}
+body ul li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #ffffff;
+}
+body ul li h3 {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-top: 0.65em;
+  display: block;
+  width: calc(100% - 175px);
+}
+body ul li h3 span {
+  float: right;
   color: linen;
+  display: inline-block;
 }
-@media only screen and (min-width: 800px) {
-    .rsvpForm {
-      text-align: center;
-      margin: auto;
-      color: Blue;
-      font-family: "Garamond", serif;
-      font-weight: 400;
-      text-decoration: none;
-      background-color: linen;
-      max-width: 18%;
-      cursor: pointer;
-      border-radius: 20px;
-    }
-  }  
+body ul li div {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 1em 2em 1em;
+  border: 2px solid #ffffff;
+}
+body ul li:nth-of-type(1) div {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/6072/6072383.png");
+}
+body ul li:nth-of-type(2) div {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/6072/6072383.png");
+}
+body ul li:nth-of-type(3):after {
+  display: none;
+}
+body ul li:nth-of-type(3) div {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/6072/6072383.png");
+}
