@@ -1,7 +1,7 @@
     // Regular season start date
 var countDown = new Date("February 4, 2024 22:30:00").getTime();
 
-var playyoffs = setInterval(function() {
+var reglrszn = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDown - now;
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -13,8 +13,8 @@ var playyoffs = setInterval(function() {
     + minutes + "m " + seconds + "s ";
 
     if (distance < 0) {
-        clearInterval(playyofff);
-        document.getElementById("regszn").innerHTML = "PLAYOFF MODE! Let the best 1 win!";
+        clearInterval(reglrszn);
+        document.getElementById("regszn").innerHTML = "Let the games begin!";
     }
 
 },
@@ -23,7 +23,7 @@ var playyoffs = setInterval(function() {
     // Playoffs start date
 var countDownDate = new Date("February 24, 2024 22:30:00").getTime();
 
-var ramos = setInterval(function() {
+var moneyline = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -35,8 +35,8 @@ var ramos = setInterval(function() {
     + minutes + "m " + seconds + "s ";
 
     if (distance < 0) {
-        clearInterval(ramos);
-        document.getElementById("playoffs").innerHTML = "Let the Games Begin!";
+        clearInterval(moneyline);
+        document.getElementById("playoffs").innerHTML = "PLAYOFF MODE! Let the best 1 win!";
     }
 
 },
