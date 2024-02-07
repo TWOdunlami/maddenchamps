@@ -1,5 +1,5 @@
     // Regular season start date
-var countDown = new Date("February 24, 2024 22:30:00").getTime();
+var countDown = new Date("February 4, 2024 22:30:00").getTime();
 
 var playyoffs = setInterval(function() {
     var now = new Date().getTime();
@@ -21,7 +21,7 @@ var playyoffs = setInterval(function() {
     1000)
 
     // Playoffs start date
-var countDownDate = new Date("February 4, 2024 22:30:00").getTime();
+var countDownDate = new Date("February 24, 2024 22:30:00").getTime();
 
 var ramos = setInterval(function() {
     var now = new Date().getTime();
