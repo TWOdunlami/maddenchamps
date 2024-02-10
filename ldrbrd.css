@@ -1,6 +1,6 @@
 body {
   width: 100vw;
-  height: 229vh;
+  height: 119vh;
   font-family: "Playfair Display", serif;
   background: linear-gradient(to bottom, #ffffff, #eaece8);
   background-size: 150%;
@@ -210,6 +210,29 @@ body ul li div {
   float: left;
   margin: 1em 2em 1em;
   border: 2px solid #ffffff;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px groove black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 520px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 body ul li:nth-of-type(1) div {
   background-image: url("https://cdn-icons-png.flaticon.com/128/6072/6072383.png");
